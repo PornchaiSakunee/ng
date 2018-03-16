@@ -1,0 +1,16 @@
+
+
+<!-- To: -->
+<input type="text" class="txt" name="item" placeholder="Life goal.." [(ngModel)]="goalText">
+
+<br><span>{{ goalText }}</span><br>
+
+<!-- To: -->
+<input type="submit" class="btn" value="{{ btnText }}" (click)="addItem()">
+<!-- From: -->
+<p class="life-container">I want to climb a mountain</p>
+
+<!-- To: -->
+<p class="life-container" *ngFor="let goal of goals">
+ {{itemCount}} : {{ goal }}
+</p>
